@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Settings />
     <Time/>
     <SearchBar SearchEngine="duckduckgo"/>
     <Links/>
@@ -13,6 +14,7 @@ import Time from "./components/Watch";
 import SearchBar from "./components/SearchBar";
 import Links from "./components/Links";
 import Wave from "./components/Wave";
+import Settings from "./components/Settings";
 
 export default {
   name: "App",
@@ -20,7 +22,8 @@ export default {
     Time,
     SearchBar,
     Links,
-    Wave
+    Wave,
+    Settings
   }
 };
 </script> 
@@ -51,6 +54,7 @@ a:visited {
 
 a:hover {
   color: white;
+  border-color: white;
 }
 
 a,
